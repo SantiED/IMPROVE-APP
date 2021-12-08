@@ -1,0 +1,37 @@
+% clc
+% clear all
+% close all
+
+net= googlenet;
+save('neuralnet.mat','net');
+% load('neuralnet.mat')
+% inputSize = net.Layers(1).InputSize;
+% classNames = net.Layers(end).ClassNames;
+% numClasses = numel(classNames);
+% 
+% 
+% I= imread('skull2.jpg');
+% I= imresize(I,inputSize(1:2));
+%  
+% [label,scores] = classify(net, I);
+% figure
+% imshow(I)
+% title(string(label)+", "+num2str(100*scores(classNames==label),3)+"%")
+% 
+% [~,idx] = sort(scores,'descend');
+% idx= idx(5:-1:1);
+% classNamesTop = net.Layers(end).ClassNames(idx);
+% scoresTop = scores(idx);
+% 
+% figure
+% barh(scoresTop)
+% xlim([0 1])
+% title('Top 5 predicciones');
+% xlabel('Probabilidad')
+% yticklabels(classNamesTop)
+
+
+
+
+% title({char(predicted_Item),num2str(max(probability),2)});
+% drawnow
